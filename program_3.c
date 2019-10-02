@@ -1,3 +1,15 @@
+/***
+ * Question: What happens when they are writing to the file concurrently, i.e.,
+ * at the same time?
+ *
+ * Answer: Only one processes may write to a file at a time.
+ * If one processes is trying to write to the file while another
+ * is already writing to it that processes is locked out
+ * and are only allowed access once the other process has 
+ * finished writing to the file.
+***/
+
+
 #include <stdio.h>
 #include <unistd.h>
 

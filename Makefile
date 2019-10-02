@@ -16,4 +16,4 @@ program_5: program_5.c
 	$(CC) -o compiled_5 program_5.c -g $(CFLAGS)
 
 clean:
-	rm -f compiled_2 compiled_3 compiled_4 compiled_5
+	rm -f compiled_2 compiled_3 compiled_4 compiled_5 JUNK.txt

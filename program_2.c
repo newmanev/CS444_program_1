@@ -1,10 +1,21 @@
 /***
  * Write a C program that calls fork(). 
  * Before calling fork(), have the parent process assign the value 100 to intcalled xx. 
- * What value is the value of xx in the child process? 
- * Have the parent process assign the value 999 to xx and 
+ * Question: What value is the value of xx in the child process? 
+ *
+ * Answer: The value of xx in the child process is 100.
+ *
+ * Question: Have the parent process assign the value 999 to xx and 
  * have the child process assign the value 777 to xx. 
- * What happens to xx variable when both the child and parent change the value of xx? 
+ * What happens to xx variable when both the child 
+ * and parent change the value of xx? 
+ *
+ * Answer: the child and the parent each get their own copy of xx 
+ * so they can't modify eachother's values. 
+ * In this case xx starts off as 100 for both the parent and child and upon 
+ * modifying becomes there specific value of xx 
+ * but this change does not effect either of them.
+ *
  * Have both processes print the value of xx. 
  * 
 ***/

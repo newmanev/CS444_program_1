@@ -1,3 +1,13 @@
+/***
+ * Question: Can you do this without the parent calling wait() in the parent
+ * (and NOT using some big loop in the parent)?
+ *
+ * Answer: Yes you can you can use the command sleep(10) in the parent processes
+ * to ensure that the child executes first before the parent has a chance to
+ * do anything 10 seconds is a bit overkill but should be enough.
+***/
+
+
 #include <stdio.h>
 #include <unistd.h>
 #include <wait.h>
